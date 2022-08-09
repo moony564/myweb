@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <input id="n_d" type="button" value="밤 모드" onclick="
+        if (document.querySelector('#n_d').value == '밤 모드') {
+            document.body.style.backgroundColor = 'black';
+            document.querySelector('#text').style.color = 'white';
+            document.querySelector('.text').style.color = 'white';
+            this.value = '낮 모드';
+        }
+        else {
+            document.body.style.backgroundColor = 'white';
+            document.querySelector('#text').style.color = 'black';
+            document.querySelector('.text').style.color = 'black';
+            this.value = '밤 모드';
+        }
+    ">
+    <button type="button"
+    onclick="
+    document.getElementById('demo').innerHTML = Date()
+    
+    
+    ">
+    클릭하여 날자 알아내기 마딩천재.</button>
+
+    <p id="demo" class="text"></p>
+
+    <br>
+
+    <h1 id="text">마딩 마딩</h1>
+</body>
+</html>
